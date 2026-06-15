@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = window.prompt('informe o seu nome');
+        document.write(`nome tem  ${nome.length} letras.`)
+        // document.write(`nome tem  ${nome.length} letras.`) == ` essa crase no teclado que usando 
+        // com as teclas shift  + conchetis
+        document.write(`olá Seu nome em maiusculos é ${nome.toUpperCase()}</br> ` );
+        document.writeln(`olá  Seu nome em maiusculos é ${nome.toUpperCase()}`)
+        //o (docoment.writeln) ele server para quebra de linha
+        // e o strong e para deixar em negrito 
+
+        document.write(`olá Seu nome em maiusculos é ${nome.toLowerCase()}`)
+        // para letras minusculas : toLowerCase()  
+        // exemplo: ${nome.toLowerCase()}
+        
+        // para colocar o nome em letras maiusculas 
+        // document.write(`Olá, seu nome em maiúsculas é ${nome.toUpperCase()}`);
+
+      //  n.toFixed(2) server para troca o ponto pela virgula
+      // exemplo de como ira ficar : m.toFixend(2).replace('.',',')
+      // n.toLocaleString('pt-BR, {style: 'currency', currency: 'BRL'}') 
+      // var.toLocaleString('pt-BR, {style: 'currency', currency: 'BRL'}') 
+      // server para colocar o valor da moeda como por exemplo: BRL,USD E EUR ETC..
+    </script>
+</body>
+
+</html>

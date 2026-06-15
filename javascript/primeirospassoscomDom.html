@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background: rgb(68,125,199);
+    color:white;
+}
+</style>
+</head>
+<body >
+    <h1 class="text-center d-flex justify-content-sm-center align-content-center mt-5">Iniciando no Dom em javascritp</h1>
+<p>Aqui vai o resultado</p>
+<p>Aprendendo a usar o <strong>Dom</strong> em JavaScritpt.</p>
+<div id="msg" name="msg" class="msn">Clique em mim</div>
+
+<script>
+
+    // selecionando por tangs
+let corpo = window.document.body
+ let p1 = window.document.getElementsByTagName( 'p')[1]
+// window.document.write('esta escrito assim: ' + p1.innerText )
+// window.document.write('esta escrito assim: ' + p1.innerHTML )
+// window.alert(p1.innerText)
+
+// p1.style.color ="red"
+// corpo.style.background = "black"
+
+// -------------------------------- selecionando por ID--------------------------------
+//  let d = window.document.getElementById("msg")
+//  d.style.background="green"
+//  d.innerText="Aguardando...."
+
+
+// -------------------------------- selecionando por nome--------------------------------
+
+// let d = window.document.getElementsByName("msg")[0]
+// d.innerText='ola'
+
+// -------------------------------- selecionando por class--------------------------------
+
+// let d =  window.document.getElementsByClassName('msn')[0]
+// d.innerText='ola'
+// -------------------------------- selecionando por seletor--------------------------------
+
+let  d = window.document.querySelector('div #msg')
+d.style.color='blue'
+</script>
+
+</body>
+</HTML>
